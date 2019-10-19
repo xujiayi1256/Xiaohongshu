@@ -70,6 +70,7 @@ body {
 @media only screen and (max-width: 539px) {
   .masonry {
     column-count: 1;
+    padding: 3.5em 0 1em;
   }
 
   .header {
@@ -78,7 +79,7 @@ body {
   }
 
   .header > img {
-    width: 100px;
+    width: 80px;
   }
 
   .menu {
