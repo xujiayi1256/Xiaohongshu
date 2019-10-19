@@ -70,7 +70,7 @@ body {
 @media only screen and (max-width: 539px) {
   .masonry {
     column-count: 1;
-    padding: 3.5em 0 1em;
+    padding: 3em 0 1em;
   }
 
   .header {
@@ -92,6 +92,10 @@ body {
   }
 
   a {
-    font-size: xx-small;
+    font-size: x-small;
   }
+
+  body {
+    margin: -1px 2em;
+}
 }
