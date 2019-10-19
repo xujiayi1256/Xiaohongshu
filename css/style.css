@@ -1,0 +1,96 @@
+@import url("components/cards.css");
+@import url("components/header.css");
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: -1px 3em;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+
+  .header {
+    padding-left: 1.5em;
+  }
+
+  .header > img {
+    width: 130px;
+  }
+
+  .menu > li {
+    padding: 0px 10px;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+
+  .header {
+    padding-left: 0.5em;
+    height: 3em;
+  }
+
+  .header > img {
+    width: 120px;
+  }
+
+  .menu > li {
+    padding: 0px 5px;
+
+  }
+
+  a {
+    font-size: small;
+  }
+}
+
+
+@media only screen and (max-width: 539px) {
+  .masonry {
+    column-count: 1;
+  }
+
+  .header {
+    padding-left: 0.5em;
+    height: 3em;
+  }
+
+  .header > img {
+    width: 100px;
+  }
+
+  .menu {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .menu > li {
+    padding: 0px 2px;
+  }
+
+  a {
+    font-size: xx-small;
+  }
+}
